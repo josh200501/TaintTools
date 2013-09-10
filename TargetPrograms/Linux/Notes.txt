@@ -1,4 +1,0 @@
-Notes
-
-- When building a 32-bit Pin tool on a 64-bit system, pass the argument 'TARGET=ia32' to 'make' 
-while building the Pin tool.
