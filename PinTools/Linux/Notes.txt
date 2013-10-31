@@ -3,4 +3,4 @@ Notes
 - When building a 32-bit Pin tool on a 64-bit system, pass the argument 'TARGET=ia32' to 'make' 
 while building the Pin tool.
 
-- To build a 32-bit application with gcc, us the -m32 command line argument.
+- To build a 32-bit application with gcc, use the -m32 command line argument.
