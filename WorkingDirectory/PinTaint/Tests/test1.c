@@ -1,6 +1,7 @@
 #include <fcntl.h>
-void foo(char *buf)
-{
+
+// Foo function
+void foo(char *buf){
   char a;
 
   a = buf[0];
@@ -13,8 +14,10 @@ void foo(char *buf)
   buf[30] = 't';
 }
 
-int main(int ac, char **av)
-{
+// Main function
+int main(int ac, char **av){
+
+  printf("First thing in test.\n");
   int fd;
   char *buf;
 
@@ -24,4 +27,5 @@ int main(int ac, char **av)
   fd = open("./file.txt", O_RDONLY);
   read(fd, buf, 256), close(fd);
   foo(buf);
+  printf("Last thing in test.\n");
 }
